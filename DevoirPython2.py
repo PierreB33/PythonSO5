@@ -71,15 +71,15 @@ def Exo10():
     
 def Exo11():
     
-    array1=np.array[10,10,20,20,30,30]
-    array2=np.array([1,1],[2,3])
+    array1=np.array([10,10,20,20,30,30])
+    array2=np.array(([1,1]),([2,3]))
     L1=[]
     L2=[]
     for i in range(len(array1)):
         if array1[i] not in L1:
-            L1.append(array1)
+            L1.append(array1[i])
     for i in range(len(array2)):
-        for j in range(len(array2[1])):
+        for j in range(len(array2[0])):
             if array2[i,j] not in L2:
                 L2.append(array2[i,j])
                 
